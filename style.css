@@ -1,0 +1,272 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*====================== Taskbar ======================*/
+
+.taskbar{
+    background: #262626;
+    width: auto;
+    height: 80px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(46, 49, 49, 1);
+}
+
+.taskbar .text{
+    padding: 5px;
+}
+
+.taskbar a{
+    color: #deb900;
+    text-decoration: none;
+    font-size: 50px;
+    margin: 0%;
+    text-align: center;
+}
+
+/*====================== Board ======================*/
+
+.board{
+    border: 3px solid #262626;
+    width: 500px;
+    height: 250px;
+    margin: 50px auto;
+    padding: 5px;
+    position: relative;
+}
+
+.board p{
+    color: #262626;
+    font-size: 80px;
+    text-align: center;
+    margin: 0px;
+}
+/*You - Com Frame*/
+.badge{
+    color: #deb900;
+    background: #262626;
+}
+
+.board .frames{
+    text-align: center;
+}
+
+.board .frame{
+    display: inline-block;
+    border: 4px solid #262626;
+    border-radius: 50%;
+    padding: 12px 20px;
+    margin: 0px 40px;
+}
+
+.board #rock-frame{
+    margin-right: 50px;
+}
+
+/*====================== Text-You ======================*/
+
+#you-label{
+    position: absolute;
+    top: 130px;
+    left: 30px;
+    font-size: 30px;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+/*====================== Text-Com ======================*/
+
+#com-label{
+    position: absolute;
+    top: 130px;
+    right: 30px;
+    font-size: 30px;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+/*====================== Display-Choice ======================*/
+
+.choices{
+    text-align: center;
+    margin: 100px 0px;
+}
+
+.choice{
+    display: inline-block;
+    border-radius: 50%;
+    border: 4px solid #262626;
+    padding: 20px 40px;
+    margin: 0px 10px;
+    transition: all 0.3s ease;
+}
+
+.choice:hover{
+    cursor: pointer;
+    background: #262626;
+    border: #ffffff;
+}
+
+/*====================== Border-Glow ======================*/
+
+.green-glow{
+    border: 0px;
+    background: #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow{
+    border: 0px;
+    background: #fc121b;
+    box-shadow: 0 0 10px #d01115;
+}
+
+.orange-glow{
+    border: 0px;
+    background: #ff680a;
+    box-shadow: 0 0 10px #cf5306;
+}
+
+/*====================== For-Screen ======================*/
+
+@media only screen and (max-width: 400px){
+    .taskbar a{
+        font-size: 30px;
+    }
+        
+    .taskbar{
+        height: auto;
+    }
+
+    .board{
+    width: 270px;
+    height: 150px;
+    }
+
+    .board p{
+        font-size: 40px;
+    }
+
+    .board .frames{
+        position: relative;
+        text-align: center;
+    }
+
+    .board #rock-frame{
+        margin: 10px;
+        margin-right: 18px;
+    }
+
+    #you-label{
+        position: absolute;
+        font-size: 20px;
+        top: 80px;
+        left: 20px;
+    }
+
+    #com-label{
+        position: absolute;
+        font-size: 20px;
+        top: 80px;
+        right: 20px;
+    }
+
+    .board .frame{
+        border: 2px solid #262626;
+        display: inline-block;
+        margin: 10px 10px;
+        padding: 6px 9px;
+    }
+
+    .board .frames .frame img{
+        width: 30px;
+        height: 35px;
+    }
+
+    .choice img{
+        width: 50px;
+        height: 75px;
+    }
+
+    .choice{
+        padding: 15px 25px;
+    }
+
+    .choices{
+        margin: 20px 0px;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    .taskbar a{
+        font-size: 30px;
+    }
+        
+    .taskbar{
+        height: auto;
+    }
+
+    .board{
+    width: 270px;
+    height: 150px;
+    }
+
+    .board p{
+        font-size: 40px;
+    }
+
+    .board .frames{
+        position: relative;
+        text-align: center;
+    }
+
+    .board #rock-frame{
+        margin: 10px;
+        margin-right: 18px;
+    }
+
+    #you-label{
+        position: absolute;
+        font-size: 20px;
+        top: 80px;
+        left: 17px;
+    }
+
+    #com-label{
+        position: absolute;
+        font-size: 20px;
+        top: 80px;
+        right: 17px;
+    }
+
+    .board .frame{
+        border: 2px solid #262626;
+        display: inline-block;
+        margin: 10px 10px;
+        padding: 6px 9px;
+    }
+
+    .board .frames .frame img{
+        width: 30px;
+        height: 35px;
+    }
+
+    .choice img{
+        width: 50px;
+        height: 75px;
+    }
+
+    .choice{
+        padding: 15px 25px;
+    }
+
+    .choices{
+        margin: 20px 0px;
+    }
+
+}
+
